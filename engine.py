@@ -42,7 +42,7 @@ class Engine:
     console.print(
       x=1,
       y=47,
-      strong=f"HP: {self.player.fighter.hp}/{self.player.fighter.max_hp}",
+      string=f"HP: {self.player.fighter.hp}/{self.player.fighter.max_hp}",
     )
 
     context.present(console)
