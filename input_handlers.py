@@ -241,7 +241,7 @@ class LevelUpEventHandler(AskUserEventHandler):
       x = 0
     
     console.print(x=x+1, y=1, string="Congratulations! You level up!")
-    console(x=x+1, y=2, string="Select an attribute to increase.")
+    console.print(x=x+1, y=2, string="Select an attribute to increase.")
 
     console.print(
       x=x+1,
@@ -252,13 +252,13 @@ class LevelUpEventHandler(AskUserEventHandler):
     console.print(
       x=x+1,
       y=5,
-      string=f"a) Strength (+1 attack, from {self.engine.player.fighter.power})",
+      string=f"b) Strength (+1 attack, from {self.engine.player.fighter.power})",
     )
 
     console.print(
       x=x+1,
       y=6,
-      string=f"a) Agility (+1 defense, from {self.engine.player.fighter.defense})",
+      string=f"c) Agility (+1 defense, from {self.engine.player.fighter.defense})",
     )
   
   def ev_keydown(self, event: tcod.event.KeyDown) -> Optional[ActionOrHandler]:
