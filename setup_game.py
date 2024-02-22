@@ -36,7 +36,7 @@ def new_game() -> Engine:
 
   engine = Engine(player=player)
 
-  engine.game_map = GameWorld(
+  engine.game_world = GameWorld(
     engine=engine,
     max_rooms=max_rooms,
     room_min_size=room_min_size,
